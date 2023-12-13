@@ -4,5 +4,73 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
+    
 }
 
+.home-page{
+    background-color: #006445;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006445;
+    width: 100%;
+    padding: 0px 50px 10px 0px;
+    gap: 30px;
+
+}
+
+.logo{
+    text-decoration: none;
+}
+
+nav{
+    
+
+}
+
+nav a{
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.countdown{
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.time h2{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1;
+    margin: 5px;
+}
+
+.time h3{
+    font-size: 14px;
+}
