@@ -1,3 +1,5 @@
+// Code for countdown
+
 var countDownDate = new Date("Jan 26, 2024 15:00:00:").getTime();
 var x = setInterval(function(){
     var now = new Date().getTime();
@@ -19,3 +21,23 @@ var x = setInterval(function(){
         document.getElementById("countdown").style.backgroundColor = "#006445";
     }
 }, 1000);
+
+// Code for changing text at different times of the day.
+
+
+window.onload = function what(){
+    const hour = new Date().getHours(); 
+    let greeting;
+
+    if (hour < 12){
+    greeting = "Gooedemorgen";
+    }else if(hour < 18){
+    greeting = "Goedemiddag";
+    }else if(hour < 23){
+    greeting = "Goodeavond";
+    }else{
+    greeting = "Goedeavond";
+    }
+    
+    document.getElementById("test").innerHTML = greeting;
+};
