@@ -8,7 +8,7 @@
 }
 
 .home-page{
-    background-color: green;
+    background-color: #004630;
 }
 
 .navbar{
@@ -16,44 +16,53 @@
     justify-content: space-between;
     background-color: #006445;
     align-items: center;
+    gap: 10px;
+    
 }
 
 .logo{
     text-decoration: none;
     padding: 5px;
     background-color: white;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: auto;
+    gap: 5px;
 }
 
 nav a{
     text-decoration: none;
-    font-size: 14px;
-    margin: 10px;
-    line-height: 14px;
+    font-size: 11px;
+    margin: 6px;
     color: white;
     font-weight: 700;
-} 
-
-/*Trial with other top of nav bar*/
-/* nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    padding: 2px;
+    position: relative;
+    display: inline-block;
 }
 
-nav a{
-    text-decoration: none;
-    font-size: 14px;
-    margin: 10px;
-    line-height: 14px;
-    color: white;
-    font-weight: 700;
-} */
+nav a::after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #dbff4a;
+    transition: width 0.3s ease 0ms, right 0.3s ease 0s;
+    width: 0;
+}
+
+nav a:hover::after{
+    width: 80%;
+}
+
+nav a:hover{
+    color: #dbff4a;
+    transition: 0.4s;
+}
 
 .content{
     display: flex;
