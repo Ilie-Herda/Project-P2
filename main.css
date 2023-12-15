@@ -11,13 +11,24 @@
     background-color: #004630;
 }
 
+.info-page{
+    background-color: #004630;
+}
+
+.inschrijven-page{
+    background-color: #004630;
+}
+
+.quiz-page{
+    background-color: #004630;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color: #006445;
     align-items: center;
     gap: 10px;
-    
 }
 
 .logo{
