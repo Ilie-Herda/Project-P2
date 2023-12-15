@@ -4,11 +4,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
-    color: white;
+    
 }
 
 .home-page{
     background-color: #004630;
+    color: white;
 }
 
 .info-page{
@@ -99,6 +100,8 @@ nav a:hover{
     display: flex;
     background-color: white;
     margin-top: 20px;
+    border: 7px solid black;
+    
 }
 
 .time{
@@ -106,7 +109,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 30px;
 }
 
 .time h2{
@@ -118,6 +121,31 @@ nav a:hover{
 }
 
 .time h3{
-    font-size: 15px;
+    font-size: 16px;
     color: black;
+}
+
+footer{
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #006445;
+    align-items: center;
+}
+
+.socials{
+    font-size: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.socials a{
+    color: white;
+}
+
+.socials a:hover{
+    color: #dbff4a;
 }
