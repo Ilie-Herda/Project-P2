@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const sendChatBtn = document.querySelector(".chat-input span");
 
     let userMessage = null; 
-    const API_KEY = "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"; // API KEY GOES HERE
+    const API_KEY = "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"; // API KEY
     const inputInitHeight = chatInput.scrollHeight;
 
     const createChatLi = (message, className) => {
