@@ -1,9 +1,10 @@
 // Code for countdown
-var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
+var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime(); // Set the date of the countdown
 var x = setInterval(function(){
     var now = new Date().getTime();
     var distance = countDownDate - now
 
+    // Time calculator
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const sendChatBtn = document.querySelector(".chat-input span");
 
     let userMessage = null; 
-    const API_KEY = "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"; // API KEY
+    const API_KEY = "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"; // API KEY GOES HERE
     const inputInitHeight = chatInput.scrollHeight;
 
     const createChatLi = (message, className) => {
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 messages: [{ role: "user", content: userMessage }],
             })
         }
-    
+        
+        // Code for error
         fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
             messageElement.textContent = data.choices[0].message.content.trim();
         }).catch(() => {

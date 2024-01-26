@@ -7,17 +7,22 @@
     
 }
 
+/* Below is the style for the body of the different pages. */
 .home-page{
     background-color: #004630;
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .info-page{
     background-color: #004630;
-}
-
-.inschrijven-page{
-    background-color: #004630;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .quiz-page{
@@ -131,7 +136,7 @@ nav a:hover{
 footer{
     width: 100%;
     height: 7%;
-    position: absolute;
+    margin-top: auto;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -167,12 +172,12 @@ body.show-chatbot .chatbot {
 .chatbot-toggler {
     background: white;
     position: fixed;
-    bottom: 8px;
+    bottom: 3.5px;
     right: 25px;
     outline: none;
     border: none;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -353,20 +358,29 @@ header h2{
     visibility: visible;
 }
 
-/* Below is the style for the Info page */
+/* Below is the style for the content of the Info page */
 .info-content{
-  background: #ddd;
+  background: #ccc;
   color: black;
-  margin-top: auto;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: 25%;
+  margin: 1.5% 18%;
+  padding: 3%;
   
 }
 
 .info-content h1{
   font-size: 42px;
   margin-bottom: 20px;
+  color: #006445;
+}
+
+.info-content h2{
+    margin-top: 10px;
+    color: #006445;
+    font-size: 28px;
+}
+
+.info-content p{
+    font-size: 18px;
 }
 
 .info-content p a{
@@ -380,10 +394,7 @@ header h2{
   transition: 0.4s;
 }
 
-/* Style for quiz */
-body{
-    background: #ec1717;
-}
+/* Below is the style for the quiz */
 
 .app{background: rgb(255, 255, 255);
 width:90%;
