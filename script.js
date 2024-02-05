@@ -1,5 +1,5 @@
 // Code for countdown
-var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime(); // Set the date of the countdown
+var countDownDate = new Date("Feb 25, 2024, 15:00:00").getTime(); // Set the date of the countdown
 var x = setInterval(function(){
     var now = new Date().getTime();
     var distance = countDownDate - now
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const sendChatBtn = document.querySelector(".chat-input span");
 
     let userMessage = null; 
-    const API_KEY = "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"; // API KEY
+    const API_KEY = "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"; // API KEY
     const inputInitHeight = chatInput.scrollHeight;
 
     const createChatLi = (message, className) => {
